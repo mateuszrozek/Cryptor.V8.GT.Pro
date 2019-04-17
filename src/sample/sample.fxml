@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="275.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="labelInfo" alignment="CENTER" layoutX="4.0" layoutY="43.0" prefHeight="17.0" prefWidth="442.0" textAlignment="CENTER" textFill="#f20303" textOverrun="CENTER_WORD_ELLIPSIS" />
+      <PasswordField fx:id="textViewPassword" layoutX="100.0" layoutY="149.0" promptText="Wpisz klucz" />
+      <TextField fx:id="textViewFile" layoutX="100.0" layoutY="102.0" minWidth="150.0" promptText="Wybierz plik" />
+      <Button fx:id="buttonEncrypt" layoutX="150.0" layoutY="202.0" minHeight="-Infinity" minWidth="75.0" mnemonicParsing="false" onAction="#performEncryption" text="Szyfruj" />
+      <Button fx:id="buttonDecrypt" layoutX="239.0" layoutY="202.0" minWidth="75.0" mnemonicParsing="false" onAction="#performDecryption" text="Deszyfruj" />
+      <Button fx:id="buttonBrowse" layoutX="275.0" layoutY="102.0" mnemonicParsing="false" onAction="#locateFile" text="Przeglądaj..." />
+      <Button fx:id="infoButton" layoutX="14.0" layoutY="236.0" mnemonicParsing="false" onAction="#createInfoBox" text="INFO" />
+   </children>
+</AnchorPane>
