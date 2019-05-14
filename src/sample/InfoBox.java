@@ -2,16 +2,11 @@ package sample;
 
 import javafx.scene.control.Alert;
 
-/**
- * Created by lenovo on 2019-04-17.
- */
 public class InfoBox {
 
 
     public static void infoBox(String infoMessage, String titleBar)
     {
-        /* By specifying a null headerMessage String, we cause the dialog to
-           not have a header */
         infoBox(infoMessage, titleBar, null);
     }
 
@@ -23,5 +18,4 @@ public class InfoBox {
         alert.setContentText(infoMessage);
         alert.showAndWait();
     }
-
 }

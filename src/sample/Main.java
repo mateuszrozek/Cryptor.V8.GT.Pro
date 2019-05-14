@@ -15,7 +15,7 @@ public class Main extends Application {
         primaryStage.setTitle("Cryptor V8 GT Pro");
 
 
-        primaryStage.setScene(new Scene(root, 450, 275));
+        primaryStage.setScene(new Scene(root, 450, 325));
         primaryStage.show();
     }
 
